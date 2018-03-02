@@ -1,16 +1,1 @@
-var data = JSON.parse(document.getElementsByClassName('container-inner-item boxed')[2].childNodes[3].getAttribute('data-location-graph'))
-let h = {}
-for (let i in data) {
-	var d = new Date(i), a = data[i].split(':');
-	if (d.getMonth() != undefined) {
-		var m = d.getMonth() + 1;
-		if (!h[m]) {h[m] = 0;}
-		h[m] += (parseInt(a[0]) + (parseInt(a[1]) / 60));
-	}
-}
-var M = ['', 'jan', 'feb', 'mar', 'apr', 'may', 'jub', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
-for (let i in h) {
-	let p = document.createElement('span');
-	p.innerHTML =M[i] + ': ' + Math.floor(h[i]) + 'h; ';
-	document.getElementsByClassName('container-inner-item boxed')[2].appendChild(p);
-}
+var _0xe29f=["\x64\x61\x74\x61\x2D\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x2D\x67\x72\x61\x70\x68","\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x63\x68\x69\x6C\x64\x4E\x6F\x64\x65\x73","\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x2D\x69\x6E\x6E\x65\x72\x2D\x69\x74\x65\x6D\x20\x62\x6F\x78\x65\x64","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x70\x61\x72\x73\x65","\x3A","\x73\x70\x6C\x69\x74","\x67\x65\x74\x4D\x6F\x6E\x74\x68","","\x6A\x61\x6E","\x66\x65\x62","\x6D\x61\x72","\x61\x70\x72","\x6D\x61\x79","\x6A\x75\x62","\x6A\x75\x6C","\x61\x75\x67","\x73\x65\x70","\x6F\x63\x74","\x6E\x6F\x76","\x64\x65\x63","\x73\x70\x61\x6E","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x3A\x20","\x66\x6C\x6F\x6F\x72","\x68\x3B\x20","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64"];var data=JSON[_0xe29f[5]](document[_0xe29f[4]](_0xe29f[3])[2][_0xe29f[2]][3][_0xe29f[1]](_0xe29f[0]));let h={};for(let i in data){var d= new Date(i),a=data[i][_0xe29f[7]](_0xe29f[6]);if(d[_0xe29f[8]]()!= undefined){var m=d[_0xe29f[8]]()+ 1;if(!h[m]){h[m]= 0};h[m]+= (parseInt(a[0])+ (parseInt(a[1])/ 60))}};var M=[_0xe29f[9],_0xe29f[10],_0xe29f[11],_0xe29f[12],_0xe29f[13],_0xe29f[14],_0xe29f[15],_0xe29f[16],_0xe29f[17],_0xe29f[18],_0xe29f[19],_0xe29f[20],_0xe29f[21]];for(let i in h){let p=document[_0xe29f[23]](_0xe29f[22]);p[_0xe29f[24]]= M[i]+ _0xe29f[25]+ Math[_0xe29f[26]](h[i])+ _0xe29f[27];document[_0xe29f[4]](_0xe29f[3])[2][_0xe29f[28]](p)}
